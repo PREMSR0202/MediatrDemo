@@ -2,8 +2,10 @@ using MediatrDemo.Library.Data;
 using MediatR;
 using MediatrDemo.Library.Model;
 using MediatrDemo.Library;
+using Azure.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Configuration.AddAzureKeyVault(new Uri(builder.Configuration["vaultURL"]), new DefaultAzureCredential());
 
 // Add services to the container.
 
@@ -13,7 +15,6 @@ builder.Services.AddMediatR(typeof(MovieModel).Assembly);
 builder.Services.AddDbContext<DbContexts>();
 builder.Services.AddSwaggerGen();
 builder.Services.AddApplicationInsightsTelemetry();
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
