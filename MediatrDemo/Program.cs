@@ -16,7 +16,8 @@ builder.Services.AddScoped<IDataRepository, DataRepository>();
 builder.Services.AddMediatR(typeof(MovieModel).Assembly);
 builder.Services.AddDbContext<DbContexts>();
 builder.Services.AddSwaggerGen();
-builder.Services.AddApplicationInsightsTelemetry();
+
+builder.Services.AddApplicationInsightsTelemetry(builder.Configuration["AppInsights"]);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

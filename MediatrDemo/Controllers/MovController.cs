@@ -1,9 +1,7 @@
 ﻿using MediatR;
 using MediatrDemo.Library.Commands;
-using MediatrDemo.Library.Handlers;
 using MediatrDemo.Library.Model;
 using MediatrDemo.Library.Queries;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MediatrDemo.Controllers
@@ -27,8 +25,8 @@ namespace MediatrDemo.Controllers
             HttpClient client = new HttpClient();
             var response = await client.GetAsync("https://jsonplaceholder.typicode.com/todos");
             var text = await response.Content.ReadAsStringAsync();
-            _logger.LogInformation(text);
-            Console.WriteLine(text);
+            _logger.LogError("LogInformation Testing 2");
+            _logger.LogInformation("LogInformation Working");
             return await _mediator.Send(new GetMovieListQuery());
         }
 
