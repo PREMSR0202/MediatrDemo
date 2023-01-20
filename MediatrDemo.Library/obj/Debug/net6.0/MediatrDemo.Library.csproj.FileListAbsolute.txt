@@ -1,0 +1,12 @@
+C:\Users\prem_\OneDrive\Documents\Personal\Leaning\Dotnet\MediatrDemo\MediatrDemo.Library\bin\Debug\net6.0\MediatrDemo.Library.deps.json
+C:\Users\prem_\OneDrive\Documents\Personal\Leaning\Dotnet\MediatrDemo\MediatrDemo.Library\bin\Debug\net6.0\MediatrDemo.Library.dll
+C:\Users\prem_\OneDrive\Documents\Personal\Leaning\Dotnet\MediatrDemo\MediatrDemo.Library\bin\Debug\net6.0\MediatrDemo.Library.pdb
+C:\Users\prem_\OneDrive\Documents\Personal\Leaning\Dotnet\MediatrDemo\MediatrDemo.Library\obj\Debug\net6.0\MediatrDemo.Library.csproj.AssemblyReference.cache
+C:\Users\prem_\OneDrive\Documents\Personal\Leaning\Dotnet\MediatrDemo\MediatrDemo.Library\obj\Debug\net6.0\MediatrDemo.Library.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\prem_\OneDrive\Documents\Personal\Leaning\Dotnet\MediatrDemo\MediatrDemo.Library\obj\Debug\net6.0\MediatrDemo.Library.AssemblyInfoInputs.cache
+C:\Users\prem_\OneDrive\Documents\Personal\Leaning\Dotnet\MediatrDemo\MediatrDemo.Library\obj\Debug\net6.0\MediatrDemo.Library.AssemblyInfo.cs
+C:\Users\prem_\OneDrive\Documents\Personal\Leaning\Dotnet\MediatrDemo\MediatrDemo.Library\obj\Debug\net6.0\MediatrDemo.Library.csproj.CoreCompileInputs.cache
+C:\Users\prem_\OneDrive\Documents\Personal\Leaning\Dotnet\MediatrDemo\MediatrDemo.Library\obj\Debug\net6.0\MediatrDemo.Library.dll
+C:\Users\prem_\OneDrive\Documents\Personal\Leaning\Dotnet\MediatrDemo\MediatrDemo.Library\obj\Debug\net6.0\refint\MediatrDemo.Library.dll
+C:\Users\prem_\OneDrive\Documents\Personal\Leaning\Dotnet\MediatrDemo\MediatrDemo.Library\obj\Debug\net6.0\MediatrDemo.Library.pdb
+C:\Users\prem_\OneDrive\Documents\Personal\Leaning\Dotnet\MediatrDemo\MediatrDemo.Library\obj\Debug\net6.0\ref\MediatrDemo.Library.dll
