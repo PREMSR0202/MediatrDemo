@@ -27,7 +27,7 @@ namespace MediatrDemo.Controllers
             HttpClient client = new HttpClient();
             var response = await client.GetAsync("https://jsonplaceholder.typicode.com/todos");
             var text = await response.Content.ReadAsStringAsync();
-            _logger.LogInformation(text);
+            console.writeline(text);
             return await _mediator.Send(new GetMovieListQuery());
         }
 

@@ -5,7 +5,9 @@ using MediatrDemo.Library;
 using Azure.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Configuration.AddAzureKeyVault(new Uri(builder.Configuration["vaultURL"]), new DefaultAzureCredential());
+builder.Configuration.AddAzureKeyVault(
+    new Uri("https://webapi-keyvault.vault.azure.net/"),
+    new DefaultAzureCredential());
 
 // Add services to the container.
 
