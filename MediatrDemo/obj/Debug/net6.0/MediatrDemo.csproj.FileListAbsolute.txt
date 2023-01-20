@@ -76,12 +76,3 @@ C:\Users\prem_\OneDrive\Documents\Personal\Leaning\Dotnet\MediatrDemo\MediatrDem
 C:\Users\prem_\OneDrive\Documents\Personal\Leaning\Dotnet\MediatrDemo\MediatrDemo\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
 C:\Users\prem_\OneDrive\Documents\Personal\Leaning\Dotnet\MediatrDemo\MediatrDemo\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
 C:\Users\prem_\OneDrive\Documents\Personal\Leaning\Dotnet\MediatrDemo\MediatrDemo\bin\Debug\net6.0\System.Memory.Data.dll
-C:\Users\prem_\OneDrive\Documents\Personal\Leaning\Dotnet\MediatrDemo\MediatrDemo\bin\Debug\net6.0\Microsoft.Azure.KeyVault.dll
-C:\Users\prem_\OneDrive\Documents\Personal\Leaning\Dotnet\MediatrDemo\MediatrDemo\bin\Debug\net6.0\Microsoft.Azure.KeyVault.WebKey.dll
-C:\Users\prem_\OneDrive\Documents\Personal\Leaning\Dotnet\MediatrDemo\MediatrDemo\bin\Debug\net6.0\Microsoft.Azure.Services.AppAuthentication.dll
-C:\Users\prem_\OneDrive\Documents\Personal\Leaning\Dotnet\MediatrDemo\MediatrDemo\bin\Debug\net6.0\Microsoft.Extensions.Configuration.AzureKeyVault.dll
-C:\Users\prem_\OneDrive\Documents\Personal\Leaning\Dotnet\MediatrDemo\MediatrDemo\bin\Debug\net6.0\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
-C:\Users\prem_\OneDrive\Documents\Personal\Leaning\Dotnet\MediatrDemo\MediatrDemo\bin\Debug\net6.0\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
-C:\Users\prem_\OneDrive\Documents\Personal\Leaning\Dotnet\MediatrDemo\MediatrDemo\bin\Debug\net6.0\Microsoft.Rest.ClientRuntime.dll
-C:\Users\prem_\OneDrive\Documents\Personal\Leaning\Dotnet\MediatrDemo\MediatrDemo\bin\Debug\net6.0\Microsoft.Rest.ClientRuntime.Azure.dll
-C:\Users\prem_\OneDrive\Documents\Personal\Leaning\Dotnet\MediatrDemo\MediatrDemo\bin\Debug\net6.0\Newtonsoft.Json.dll

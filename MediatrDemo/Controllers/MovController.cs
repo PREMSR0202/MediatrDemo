@@ -13,9 +13,9 @@ namespace MediatrDemo.Controllers
     public class MovController : ControllerBase
     {
         public IMediator _mediator;
-        public ILogger _logger;
+        public ILogger<MovController> _logger;
 
-        public MovController(IMediator mediator, ILogger logger) 
+        public MovController(IMediator mediator, ILogger<MovController> logger) 
         {
             _mediator = mediator;
             _logger = logger;
@@ -27,6 +27,7 @@ namespace MediatrDemo.Controllers
             HttpClient client = new HttpClient();
             var response = await client.GetAsync("https://jsonplaceholder.typicode.com/todos");
             var text = await response.Content.ReadAsStringAsync();
+            _logger.LogInformation(text);
             Console.WriteLine(text);
             return await _mediator.Send(new GetMovieListQuery());
         }
