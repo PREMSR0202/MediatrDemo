@@ -4,8 +4,8 @@ using MediatrDemo.Library.Model;
 using MediatrDemo.Library;
 using Azure.Identity;
 using Microsoft.ApplicationInsights.DependencyCollector;
-using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
+using MediatrDemo.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Configuration.AddAzureKeyVault(
@@ -22,18 +22,26 @@ builder.Services.AddDbContext<DbContexts>(options => options.UseSqlServer(
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddApplicationInsightsTelemetry(builder.Configuration["AppInsights"]);
+
+
+builder.Services.AddTransient<RequestBodyLoggingMiddleware>();
+builder.Services.AddTransient<ResponseBodyLoggingMiddleware>();
+
 builder.Services.ConfigureTelemetryModule<DependencyTrackingTelemetryModule>((module, o) =>
     { module.EnableSqlCommandTextInstrumentation = true; });
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-
+app.UseHttpLogging();
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Movies API");
 });
+
+app.UseMiddleware<RequestBodyLoggingMiddleware>();
+app.UseMiddleware<ResponseBodyLoggingMiddleware>();
 
 app.UseAuthorization();
 
