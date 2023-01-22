@@ -11,10 +11,9 @@ namespace MediatrDemo.Library
     public class DbContexts : DbContext
     {
 
-        protected override void OnConfiguring
-            (DbContextOptionsBuilder dbContextOptionsBuilder)
+        public DbContexts(DbContextOptions<DbContexts> options): base(options)
         {
-            dbContextOptionsBuilder.UseInMemoryDatabase(databaseName: "Movies");
+
         }
 
         public DbSet<MovieModel> MovieModel { get; set; }

@@ -13,7 +13,7 @@ namespace MediatrDemo.Controllers
         public IMediator _mediator;
         public ILogger<MovController> _logger;
 
-        public MovController(IMediator mediator, ILogger<MovController> logger) 
+        public MovController(IMediator mediator, ILogger<MovController> logger)
         {
             _mediator = mediator;
             _logger = logger;
@@ -25,8 +25,9 @@ namespace MediatrDemo.Controllers
             HttpClient client = new HttpClient();
             var response = await client.GetAsync("https://jsonplaceholder.typicode.com/todos");
             var text = await response.Content.ReadAsStringAsync();
-            _logger.LogError("LogInformation Testing 2");
-            _logger.LogInformation("LogInformation Working");
+            //_logger.LogError("LogInformation Testing 2");
+            //_logger.LogInformation("LogInformation Working");
+            //Convert.ToInt32("123a");
             return await _mediator.Send(new GetMovieListQuery());
         }
 
